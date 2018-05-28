@@ -2,7 +2,7 @@ package FactoryMethod.maker;
 
 import FactoryMethod.buttons.MacButton;
 
-public class MacMaker extends Maker {
+public class MacMaker implements Maker {
 
     @Override
     public MacButton createButton() {

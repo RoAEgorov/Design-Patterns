@@ -2,7 +2,11 @@ package Singleton;
 
 public class Singleton {
 
-    private Singleton() {
+    private Singleton () {
+    }
+
+    private static class SingletonHolder {
+        public static final Singleton INSTANCE = new Singleton();
     }
 
     public static Singleton getInstance() {
@@ -17,9 +21,5 @@ public class Singleton {
     @Override
     public boolean equals(Object obj) {
         return super.equals(obj);
-    }
-
-    private static class SingletonHolder {
-        public static final Singleton INSTANCE = new Singleton();
     }
 }

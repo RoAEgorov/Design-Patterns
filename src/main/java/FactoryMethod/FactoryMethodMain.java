@@ -6,9 +6,6 @@ import FactoryMethod.maker.Maker;
 import FactoryMethod.maker.WinMaker;
 
 public final class FactoryMethodMain {
-    public FactoryMethodMain() {
-    }
-
     public static void main(String[] args) {
         {
             Maker maker = new WinMaker();
@@ -21,5 +18,8 @@ public final class FactoryMethodMain {
             Button button = maker.createButton();
             System.out.println(button.click());
         }
+    }
+
+    public FactoryMethodMain() {
     }
 }

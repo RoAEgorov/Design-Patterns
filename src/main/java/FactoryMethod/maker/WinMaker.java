@@ -2,7 +2,7 @@ package FactoryMethod.maker;
 
 import FactoryMethod.buttons.WinButton;
 
-public class WinMaker extends Maker {
+public class WinMaker implements Maker {
 
     @Override
     public WinButton createButton() {
