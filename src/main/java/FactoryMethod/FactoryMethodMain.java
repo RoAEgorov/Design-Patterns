@@ -19,7 +19,4 @@ public final class FactoryMethodMain {
             System.out.println(button.click());
         }
     }
-
-    public FactoryMethodMain() {
-    }
 }
